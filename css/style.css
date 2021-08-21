@@ -109,13 +109,13 @@ table {
 }
 
 #loading #preloader:after {
-  content: "Play.Datblock.Com";
+  content: "Hobbitcraft SMP";
   /* Text under the circles */
   position: absolute;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 400;
-  color: #4d515f;
+  color: #26aecd;
   letter-spacing: 1px;
   font-family: Montserrat, "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
   top: 90px;
@@ -128,7 +128,7 @@ table {
 
 #loading #preloader span {
   position: absolute;
-  border: 4px solid #e59442;
+  border: 4px solid #26aecd;
   border-radius: 100%;
 }
 
