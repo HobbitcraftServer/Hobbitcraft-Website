@@ -1,5 +1,5 @@
 body {
-  color: #222;
+  color: #36393f;
   background: #fff;
   font: 100% system-ui;
 }
@@ -10,7 +10,7 @@ a {
 @media (prefers-color-scheme: dark) {
   body {
     color: #eee;
-    background: #121212;
+    background: #36393f;
   }
 
   body a {
