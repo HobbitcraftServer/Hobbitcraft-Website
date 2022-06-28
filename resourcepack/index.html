@@ -1,4 +1,5 @@
 <script>
+    var fs = require('fs');
     var files = fs.readdirSync('');
     document.getElementById('list').innerHTML = files;
 </script>
