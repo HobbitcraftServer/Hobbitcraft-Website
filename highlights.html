@@ -114,7 +114,46 @@
                         <h1>Week 2</h1>
                         <img src="https://cdn.discordapp.com/attachments/910554806928695346/992945296516591676/unknown.png" size="50%"> <br>
                         <small>Technoblade Statue built by _xEmerald - Leaping Hills <br>Feel free to come on by and pay respects to Technoblade at leaping hills, located at -900, 1960</small>
-                </div>
+                </div> <hr>
+                <div class="row"></div>
+                <div class="col-md">
+                <div class="row">
+                    <h1>Week 3</h1>
+                    <!-- Display the countdown timer in an element -->
+                    <p id="Week 3"></p>
+
+            <script>
+                // Set the date we're counting down to
+            var countDownDate = new Date("July 9, 2022 22:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="Week 3"
+            document.getElementById("Week 3").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("Week 3").innerHTML = "Week 3 Coming Soon";
+            }
+            }, 1000);
+            </script> <br>
+                    <small></small>
+            </div>
         </center>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
