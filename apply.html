@@ -576,6 +576,15 @@
 
 <script type="text/javascript">
     alert("Please fill in the application seriously. \nIf you dont put effort into your application, you will most likely be denied.");
+    
+    window.addEventListener("beforeunload", function (e) {
+    var confirmationMessage = 'It looks like you have been editing something. '
+                            + 'If you leave before saving, your changes will be lost.';
+
+    (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+    return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+});
+
 </script>
 
 </html> 
