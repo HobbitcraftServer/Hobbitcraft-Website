@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="../img/ic/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="../img/ic/browserconfig.xml">
-    <meta name="theme-color" content="#c35935">
+    <meta name="theme-color" content="#cd7b3a">
     <meta name="keywords" content="minecraft, smp, hobbitcraft, whitelisted, server, hermitcraft, apply, application" />
 
     <title>Hobbitcraft | Logo Archive</title>
@@ -25,19 +25,19 @@
     <meta property="og:title" content="Hobbitcraft Logo Archive" />
     <meta property="og:description" content="The place where all the logos are archived" />
     <meta property="og:url" content="https://www.hobbitcraft.cc" />
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/909466958238461992/971164753340825672/hc7.png?size=4096" />
+    <meta property="og:image" content="https://hobbitcraft.cc/img/ic/navicon.png" />
 </head>
 
 <body>
     <body>
         <div class="container-fluid HC-background">
             <div class="container text-center">
-                <img class="HC-title" src="../img/ic/hobbitcraftwhitelistweb.png">
+                <img class="HC-title" src="../img/logoarchive.webp">
             </div>
     </div>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="link" href="https://hobbitcraft.cc"><img src=../img/ic/hc732.png> </a>
+            <a class="link" href="https://hobbitcraft.cc"><img src="../img/ic/navicon.png" height="48" width="48"> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -52,24 +52,15 @@
                         <a class="nav-link" href="https://map.hobbitcraft.cc">🗺️Dynmap</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../shops">🛒Shops</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="../rules">📘Rules</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../files">🗃️Files</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../highlights">🖼️Highlights</a>
-                    </li>
+                    
                     <div class="dropdown-divider"></div>
                 </ul> 
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <a class="nav-link" href="../apply">
-                        <img src="../img/ic/apply.svg" alt="Apply Icon" style="height:20px;"
-                            class="d-inline-block align-text-center"> Apply
-                    </a>
                 </a>
                 <a class="nav-link" href="../donate"> ⭐Donate
                 </a>
@@ -83,7 +74,7 @@
                     </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://discord.com/invite/Fxb2aGjmhB"><img
+                        <a class="nav-link" href="https://discord.gg/S5PsRp9c9Q"><img
                                 src="https://cdn.discordapp.com/attachments/922022247164682250/922023651400900648/image_2021-12-19_021153.png"
                                 alt="Discord Logo" style="height:20px;" class="d-inline-block align-text-center"> Join
                             our Discord!</a>
@@ -95,26 +86,19 @@
     <center>
         <br>
 <h1>Hobbitcraft Logo Archive</h1> <hr>
+
+<h3>Welcome to the Logo Archive, where all the logos that are related to hobbitcraft get archived.</h3>
 </center>
 <div class=container>
 <?php
     $files = scandir('img/');
     foreach($files as $file) {
         if($file !== "." && $file !== "..") {
-            echo "<img width='50%' src='img/$file'/>";
+            echo "<img width='50%' loading='lazy' vertical-align:middle src='img/$file'/>";
         }
     }
 ?>
 </div>
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/7bqxixtM07lUkUd1mdKAVB?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-
-<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-    new Crate({
-        server: '766123204779049023', // Hobbitcraft SMP
-        channel: '766123204779049026' // #💬︱chat
-    })
-</script>
 </body>
 
 <br>
