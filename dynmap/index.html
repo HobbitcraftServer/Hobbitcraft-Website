@@ -7,6 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
         <link href="style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
         <link rel="apple-touch-icon" sizes="180x180" href="../img/ic/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../img/ic/favicon-32x32.png">
@@ -39,39 +40,14 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.hobbitcraft.cc">🏠Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="https://map.hobbitcraft.cc">🗺️Dynmap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="shops">🛒Shops</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="rules">📘Rules</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="files">🗃️Files</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="highlights">🖼️Highlights</a>
-                        </li>
-						<li class="nav-item">
-							<a class="nav-link" href="https://github.com/DerpDerpling/Hobbitcraft-Website">
-							<img  src="https://cdn.discordapp.com/attachments/922022247164682250/922207556296925225/25231.png" alt="Github Logo" style="height:20px;" class="d-inline-block align-text-center"> Source
-						</a>
-					</li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://discord.gg/S5PsRp9c9Q"><img src="https://cdn.discordapp.com/attachments/922022247164682250/922023651400900648/image_2021-12-19_021153.png" alt="Discord Logo" style="height:20px;" class="d-inline-block align-text-center"> Join our Discord!</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<!--Navigation bar-->
+<div id="navbar">
+</div>
+<script>
+$(function(){
+  $("#navbar").load("../navbar/navbar.html");
+});
+</script>
+<!--end of Navigation bar-->
     </body>
 </html>

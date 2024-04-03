@@ -16,10 +16,13 @@
 .rounded-corners {
   border-radius: 10px;
 }
-
-a {
-  text-decoration: none;
+.nav-link[aria-current="page"] {
+  text-decoration: underline wavy #f8c348 0.15rem;
+  text-underline-offset: 0.5rem;
 }
+
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

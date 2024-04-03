@@ -7,6 +7,7 @@
 
     <link href="../style.css" rel="stylesheet">
     <link href="../dark.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../img/ic/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/ic/favicon-32x32.png">
@@ -35,54 +36,15 @@
                 <img class="HC-title" src="../img/logoarchive.webp">
             </div>
     </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="link" href="https://hobbitcraft.cc"><img src="../img/ic/navicon.png" height="48" width="48"> </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.hobbitcraft.cc">🏠Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://map.hobbitcraft.cc">🗺️Dynmap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../rules">📘Rules</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../files">🗃️Files</a>
-                    </li>
-                    
-                    <div class="dropdown-divider"></div>
-                </ul> 
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                </a>
-                <a class="nav-link" href="../donate"> ⭐Donate
-                </a>
-                    <a class="nav-link active" href="../logoarchive">
-                        <img src="../img/ic/hc632.png" alt="Logo Archive Icon" style="height:20px;"
-                            class="d-inline-block align-text-center"> Logo Archive
-                    </li>
-                    <a class="nav-link" href="https://github.com/DerpDerpling/Hobbitcraft-Website">
-                        <img src="https://cdn.discordapp.com/attachments/922022247164682250/922207556296925225/25231.png"
-                            alt="Github Logo" style="height:20px;" class="d-inline-block align-text-center"> Source
-                    </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://discord.gg/S5PsRp9c9Q"><img
-                                src="https://cdn.discordapp.com/attachments/922022247164682250/922023651400900648/image_2021-12-19_021153.png"
-                                alt="Discord Logo" style="height:20px;" class="d-inline-block align-text-center"> Join
-                            our Discord!</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!--Navigation bar-->
+<div id="navbar">
+</div>
+<script>
+$(function(){
+  $("#navbar").load("../navbar/navbar.html");
+});
+</script>
+<!--end of Navigation bar-->
     <center>
         <br>
 <h1>Hobbitcraft Logo Archive</h1> <hr>
@@ -94,7 +56,7 @@
     $files = scandir('img/');
     foreach($files as $file) {
         if($file !== "." && $file !== "..") {
-            echo "<img width='50%' loading='lazy' vertical-align:middle src='img/$file'/>";
+            echo "<a href='img/$file'><img width='30%' loading='lazy' vertical-align:middle src='img/$file'/></a>";
         }
     }
 ?>

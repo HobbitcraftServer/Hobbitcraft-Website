@@ -10,6 +10,7 @@
 
     <link href="../style.css" rel="stylesheet">
     <link href="../dark.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../img/ic/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/ic/favicon-32x32.png">
@@ -38,56 +39,15 @@
                 <img class="HC-title" src="../img/ic/hobbitcraftwhitelistweb.png">
             </div>
     </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="link" href="https://hobbitcraft.cc"><img src="../img/ic/navicon.png" height="48" width="48"> </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.hobbitcraft.cc">🏠Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://map.hobbitcraft.cc">🗺️Dynmap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../shops">🛒Shops</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../rules">📘Rules</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../files">🗃️Files</a>
-                    </li>
-                    <div class="dropdown-divider"></div>
-                </ul> 
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                </a>
-                <a class="nav-link" href="../donate"> ⭐Donate
-                </a>
-                    <a class="nav-link" href="../logoarchive">
-                        <img src="../img/ic/hc632.png" alt="Logo Archive Icon" style="height:20px;"
-                            class="d-inline-block align-text-center"> Logo Archive
-                    </li>
-                    <a class="nav-link" href="https://github.com/DerpDerpling/Hobbitcraft-Website">
-                        <img src="https://cdn.discordapp.com/attachments/922022247164682250/922207556296925225/25231.png"
-                            alt="Github Logo" style="height:20px;" class="d-inline-block align-text-center"> Source
-                    </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://discord.gg/S5PsRp9c9Q"><img
-                                src="https://cdn.discordapp.com/attachments/922022247164682250/922023651400900648/image_2021-12-19_021153.png"
-                                alt="Discord Logo" style="height:20px;" class="d-inline-block align-text-center"> Join
-                            our Discord!</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!--Navigation bar-->
+<div id="navbar">
+</div>
+<script>
+$(function(){
+  $("#navbar").load("../navbar/navbar.html");
+});
+</script>
+<!--end of Navigation bar-->
     <br>
 
     <div class="container text">
@@ -96,81 +56,6 @@
         target="_self"
         id="bootstrapForm"
         method="POST">
-      <fieldset>
-          <center>
-          <h2>Hobbitcraft Whitelist Application
-            <hr>
-            <small>Make your application detailed!<br>
-            <hr>
-
-  <small>All players must fill out an application for the server unless otherwise told by staff.
-  Any member you refer will be rewarded with a referal point on the discord.
-  Please dont make joke applications</small></h2>
-      </fieldset>
-  <hr>
-  <br>
-  <div class="container">
-    <br>
-    <center><img src="https://cdn.discordapp.com/attachments/766144504373706762/990759596236894268/mcrules.png" width="40%" height="100%"></center><br><br>
-    <h4><small>If you do not follow the rules stated below, us admins reserve the right to punish you according to
-            the punishments section <a href="#punishments">here</a>. If you have any questions about the rules/punishments, please feel free to ask.</small></h4>
-    <p>If you have any questions about the rules/punishments, please feel free to contact one of the Admins</p>
-    <h3>Rule 1</h3>
-    <p><strong>Do not grief or steal</strong>. Taking items you don’t own or breaking blocks out of a building you didn’t build is prohibited, unless the owner of the chest/build agrees to it. This includes farms: using someone’s farm without their permission is <strong><strong>NOT allowed</strong></strong>.</p>
-    <h3>Rule 2</h3>
-    <p>As long as they are done in <strong>good taste</strong>, are easily cleaned after, they do not interfere with actual builds and their functionality and they are part of an event, <strong>pranks are allowed</strong> (contact a Staff Member if you are unsure about a prank being considered over the top).</p>
-    <h3>Rule 3</h3>
-    <p><strong>PvP is enabled, but we moderate it.</strong> If you go forth and kill people (especially in continuity) <strong>without their consent</strong>, you will be punished. Unless agreed upon differently by the involved parties, <strong>all items dropped need to be returned to their owner</strong> (this does not include the head drop that happens when a player kills a player). In case of an attack, self-defense is not punishable; revenge spree killing is.</p>
-    <h3>Rule 3.1</h3>
-    <p>In case the <strong>victim loses their items</strong> because of how the attacker killed them (e.x. multiple explosions or lava) <strong>the attacker</strong> has to use their own resources to get back/farm back the victim&#39;s item. This does not jump into effect if the attacker loses its items because the victim used self-defense. This is a risk the attacker needs to take. \n\n<strong>Above rules do not apply for events that require a sign-up, as you are giving your consent to lose your items in the event's context.</strong></p>
-    <h3>Rule 4</h3>
-    <p>Do not xray or cheat. <strong>Please do not use hacked/modded clients that give you an advantage over other players.</strong> Using TNT dupers, bedrock breakers or similar exploits is accepted however. Straight up ITEM DUPERS ARE NOT ALLOWED (ex. Exploits that can duplicate shulkers of items). Do not use any mapping software to easily find structures either.</p>
-    <h3>Rule 4.1</h3><div id="punishments">
-    <p><p>Using glitches like <strong>TNT dupers, bedrock breakers or similar exploits are accepted</strong> since they have become actual game features accepted by the redstoners and the developers. Straight up item dupers are <strong><strong>NOT allowed</strong></strong> (ex. exploits that can duplicate shulkers of items).<br>
-        Example: TNT dupers do not count as item duping, since they duplicate the TNT entity. Carpet dupers, however, are not allowed.</p></p>
-        <br>
-        <small>All rules apply to Direct Messages to and from members of this community.<br>
-Punishment severity is at the discretion of the Staff Members.</small>
-<p><small>Last Updated • 06/26/2022</small></p>
-
-    <hr>
-    
-        <center><img src="https://cdn.discordapp.com/attachments/766144504373706762/986751301306167316/Punishments.png" width="40%" height="100%"></center>
-        <br>
-        <br>
-    </div>
-    <center><p><strong>This guide informs you how you will be punished based on how you break the rules on the minecraft server.</strong></p></center>
-    <h3>Xray</h3>
-    <p>If we suspect that you have used any method of Xraying, we will immediately kick you out of the server. <br> <br>
-        Punishment: <strong>Permanent Ban</strong></p>
-    <h3>Light Griefing</h3>
-    <p>Referring to cases where the griefed area is small and/or of little value.<br> <br>
-
-        Punishment: <strong>3-7 days Ban</strong>, damages fixed by the perpetrator or rolled back</p>
-    <h3>Heavy Griefing</h3>
-    <p>Using explosives or other tools to damage a big area of high value.<br><br>
-
-        Punishment: <strong>Permanent Ban</strong>, area will be rolled back.</p>
-    <h3>Duping</h3>
-    <p>Any form of intended item duping. <br> <br>
-
-        Punishment: <strong>Permanent Ban</strong>, duped items deleted.</p>
-    <h3>Stealing</h3>
-    <p>Stealing items or mobs (this includes not giving back a player's items after PvP) Items need to be given back to their owner in all cases<br><br>
-
-        Punishment: <strong>Warning</strong>, If stuff is not given back: <strong>Permanent Ban</strong></p>
-    <h3>Repeated Killing of a Person</h3>
-    <p>When one person is killed multiple times in a short amount of time without their consent.<br><br>
-
-        Punishment: <strong>Warning</strong>, If they don't stop after warning, and it escalates even further, <strong> 3 day Ban.</strong></p>
-    <h3>Major Cheating</h3>
-    <p>Includes hacked clients, fly hacks, kill aura, etc.<br> <br>
-
-        Punishment: <strong>Permanent Ban</strong></p>
-    <p><small>Ignorance of the rules or punishments is not an excuse. Us admins have full permission to permanently ban you from the minecraft server for breaking the rules. <br> Last Updated • 06/26/2022</small></p>
-</div>
-  <hr>
-  
       <!-- Field type: "section" id: "71985232" -->
       <fieldset>
           <legend for="71985232">Application</legend>
@@ -200,7 +85,6 @@ Punishment severity is at the discretion of the Staff Members.</small>
           </div>
       </fieldset>
   <br>
-  
       <!-- Field type: "short" id: "1802309653" -->
       <fieldset>
           <legend for="1802309653">What is your Discord Username? Please include your tag.</legend>
@@ -583,10 +467,5 @@ Punishment severity is at the discretion of the Staff Members.</small>
         <br>
         <br>
 </body>
-
-
-<script type="text/javascript">
-    alert("Please fill in the application seriously. \nIf you dont put effort into your application, you will most likely be denied.");
-</script>
 
 </html> 
